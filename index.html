@@ -575,8 +575,7 @@
         </p>
         <p>
           This theoretical attack is mitigated by [[[#data-minimization]]],
-          [[[#user-attention]]], [[[#user-mediated-action]]] and
-          [[[#rate-limiting-change-notifications]]].
+          [[[#user-attention]]] and [[[#user-mediated-action]]].
         </p>
         <h4>
           Cross-origin iframes
@@ -647,21 +646,6 @@
             per [=posture values table=], and explicit, because the underlying
             operating system adapts to posture changes similarly matching
             user's learned expectations for an outcome of such an action.
-          </p>
-        </section>
-        <section>
-          <h4 id="rate-limiting-change-notifications">
-            Rate-limiting change notifications
-          </h4>
-          <p>
-            The API is designed to minimize the rate at which posture state
-            changes are reported. A change is only reported throught this API
-            when an implementation-defined threshold is crossed per [=posture
-            values table=]. Given the small number of states and a wide range
-            of angles that correlate with the default
-            "{{DevicePostureType/continuous}}" state, the rate of notifications
-            is limited. We playfully call this mitigation a physical
-            human-computer interface rate limiter.
           </p>
         </section>
       </section>
